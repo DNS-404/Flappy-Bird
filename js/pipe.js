@@ -3,7 +3,7 @@ function Pipe() {
   this.top = 0;
   this.bottom = 0;
 
-  this.width = 10;
+  this.width = 20;
   this.x = width;
   this.y = 0;
   this.velocity = 2;
@@ -30,9 +30,9 @@ function Pipe() {
     return this.x < -this.width;
   }
 
-  // Not at all accurate :p
+  // not so accurate :P
   this.collision = function(bird) {
-    return (bird.y < this.top || bird.y > this.bottom) &&
-          (bird.x > this.x && bird.x < this.x + this.width);
+    return (bird.y+10 < this.top || bird.y-10 > this.bottom) &&
+          (bird.x+10 > this.x && bird.x-10 < this.x + this.width);
   }
 }
