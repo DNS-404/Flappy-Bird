@@ -6,7 +6,7 @@ After death, press `Return` : To start new game
 
 ## Gameplay Sample
 
-
+<img src="/media/gameplay.gif" height=400>
 
 ## Creator
 
