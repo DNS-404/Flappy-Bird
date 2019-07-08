@@ -5,7 +5,7 @@ function Bird() {
   this.velocity = 0;
 
   this.show = function() {
-    fill(255);
+    fill(255,255,0);
     circle(this.x, this.y, 20);
   }
 
